@@ -8,13 +8,30 @@
   --team-and-button-color: #f5f4fa;
   --project-gallery-figure-border-color: #eeeeee;
 }
+
+/*Here is normalization*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--main-font-color);
 }
+
 .menu {
   border-bottom: 1px solid #ececec;
 }
+
 .nav-link {
   vertical-align: middle;
   font-weight: 500;
@@ -26,16 +43,20 @@ body {
   line-height: var(--line-height-for-font-14);
   font-size: 14px;
 }
+
 .link:visited {
   color: inherit;
 }
+
 .link:focus,
 .link:hover {
   color: var(--highlight-color);
 }
+
 .gray-mail-phone {
   color: var(--ordinary-font-color);
 }
+
 .logo {
   font-family: "Raleway";
   font-size: 26px;
@@ -44,13 +65,16 @@ body {
   color: inherit;
   text-decoration: none;
 }
+
 .contrast {
   background-color: var(--bk-dark-color);
   color: #fff;
 }
+
 .call-to-action {
   min-height: 600px;
 }
+
 .call-to-action-h1 {
   font-weight: 900;
   font-size: 44px;
@@ -61,6 +85,7 @@ body {
   width: 696px;
   vertical-align: middle;
 }
+
 .call-to-action-button {
   background: var(--highlight-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -75,13 +100,15 @@ body {
   letter-spacing: 0.06em;
   color: inherit;
 }
+
 .features {
   columns: 4;
   list-style-type: none;
   column-width: 270px;
   column-gap: var(--element-horizontal-gap);
 }
-.feature > h3 {
+
+.feature>h3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -90,7 +117,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.feature > p {
+
+.feature>p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -99,11 +127,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--ordinary-font-color);
 }
+
 .boxes {
-  columns: 3;
   list-style-type: none;
-  column-gap: var(--element-horizontal-gap);
 }
+
 .h2-title {
   font-family: "Roboto";
   font-style: normal;
@@ -113,25 +141,30 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .team {
   background: var(--team-and-button-color);
   min-height: 648px;
-  vertical-align: middle;
 }
+
 .team-cards {
   list-style-type: none;
-  columns: 4;
-  text-align: center;
-  column-gap: var(--element-horizontal-gap);
+
 }
+
 .team-card {
-  width: 278px;
+  width: 270px;
   height: 368px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
+
 .team-card-name {
   font-family: "Roboto";
   font-style: normal;
@@ -143,6 +176,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .team-card-job {
   font-family: "Roboto";
   font-style: normal;
@@ -155,15 +189,21 @@ body {
   letter-spacing: 0.03em;
   color: var(--ordinary-font-color);
 }
+
 .contact-data {
   min-height: 252px;
+  padding: 60px 0;
+  line-height: 1.71428;
 }
+
+/*here starts portfolio css*/
 .filter-buttons {
   list-style-type: none;
   columns: 5;
   column-gap: 8px;
   text-align: center;
 }
+
 .filter-button {
   background-color: var(--team-and-button-color);
   border: 4px;
@@ -183,18 +223,22 @@ body {
 .filter-button:hover {
   cursor: pointer;
 }
+
 .filter-button:active {
   background-color: var(--highlight-color);
-  color: #fff; /* shadow-middle */
+  color: #fff;
+  /* shadow-middle */
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
 .project-gallery {
   list-style-type: none;
   columns: 3;
 }
+
 .project {
   height: 404px;
   width: 380px;
@@ -202,6 +246,7 @@ body {
   border-style: solid;
   border-color: var(--project-gallery-figure-border-color);
 }
+
 .project-title {
   font-family: "Roboto";
   font-style: normal;
@@ -212,6 +257,7 @@ body {
 
   letter-spacing: 0.06em;
 }
+
 .project-type {
   font-family: "Roboto";
   font-style: normal;
@@ -224,6 +270,24 @@ body {
 
   color: var(--ordinary-font-color);
 }
+
 .hidden {
   display: none;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.block-display {
+  display: block;
+}
+
+.flex {
+  display: flex;
 }
