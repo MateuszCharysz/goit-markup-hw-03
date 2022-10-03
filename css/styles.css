@@ -203,9 +203,13 @@ body {
 .contact-data {
   min-height: 252px;
   padding: 60px 0;
-  line-height: 1.71;
+
 }
-.address-margin {margin-bottom: 9px;}
+
+.address-margin {
+  margin-bottom: 4px;
+}
+
 .address-font {
   line-height: 1.71;
 
