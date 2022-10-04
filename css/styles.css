@@ -18,15 +18,14 @@ h5,
 h6,
 p,
 ul,
-address {
-  margin: 0;
-  padding: 0;
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  font-style: normal;
+{
+margin: 0;
+padding: 0;
+padding-inline-start: 0;
+margin-block-start: 0;
+margin-block-end: 0;
+margin-inline-start: 0;
+margin-inline-end: 0;
 }
 
 /*here is css*/
@@ -37,11 +36,23 @@ body {
 
 .menu {
   border-bottom: 1px solid #ececec;
+  min-height: 80px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-link {
   vertical-align: middle;
   font-weight: 500;
+  display: flex;
+  width: 254px;
+  justify-content: space-between;
+}
+
+.nav-link>a {
+  display: block;
 }
 
 .link {
@@ -72,7 +83,7 @@ body {
   line-height: 1.19;
   color: inherit;
   text-decoration: none;
-  margin-bottom: 20px;
+  display: block;
 }
 
 .contrast {
@@ -82,6 +93,8 @@ body {
 
 .call-to-action {
   min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .call-to-action-h1 {
@@ -92,7 +105,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
-  vertical-align: middle;
+  /*position of next element*/
+  margin-bottom: 30px;
 }
 
 .call-to-action-button {
@@ -104,17 +118,24 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  vertical-align: middle;
-  text-align: center;
   letter-spacing: 0.06em;
   color: inherit;
+  /*position*/
+
 }
 
 .features {
-  columns: 4;
   list-style-type: none;
-  column-width: 270px;
-  column-gap: var(--element-horizontal-gap);
+  /*position of next element and positioning*/
+  margin-bottom: 94px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  display: block;
+  width: 270px;
 }
 
 .feature>h3 {
@@ -125,6 +146,8 @@ body {
   line-height: var(--line-height-for-font-14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  /*position of next element*/
+  margin-bottom: 10px;
 }
 
 .feature>p {
@@ -139,6 +162,10 @@ body {
 
 .boxes {
   list-style-type: none;
+  /*positioning*/
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .h2-title {
@@ -149,6 +176,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team {
@@ -158,7 +186,10 @@ body {
 
 .team-cards {
   list-style-type: none;
-
+  /*positioning*/
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-card {
@@ -184,6 +215,8 @@ body {
 
   text-align: center;
   letter-spacing: 0.03em;
+  /*positioning*/
+  margin: 30px auto 10px;
 }
 
 .team-card-job {
@@ -210,9 +243,13 @@ body {
   margin-bottom: 4px;
 }
 
+.address-margin-2 {
+  margin-top: 20px;
+}
+
 .address-font {
   line-height: 1.71;
-
+  font-style: normal;
 }
 
 /*here starts portfolio.html css*/
@@ -296,6 +333,10 @@ body {
 /*CSS positions*/
 .section {
   padding: 94px 0;
+}
+
+.section-bot-margin {
+  margin-bottom: 94px;
 }
 
 .container {
