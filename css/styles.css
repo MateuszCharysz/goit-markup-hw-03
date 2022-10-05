@@ -4,7 +4,7 @@
   --main-font-color: #212121;
   --ordinary-font-color: #757575;
   --line-height-for-font-14: 1.14;
-  --element-horizontal-gap: 30px;
+  --element-gap: 30px;
   --team-and-button-color: #f5f4fa;
   --project-gallery-figure-border-color: #eeeeee;
 }
@@ -36,10 +36,14 @@ body {
 .menu {
   border-bottom: 1px solid #ececec;
   min-height: 80px;
-  padding: 0 15px;
+  padding: 0 27px 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu:nth-child(3) {
+  justify-content: flex-end;
 }
 
 .nav-link {
@@ -50,15 +54,12 @@ body {
   justify-content: space-between;
 }
 
-.nav-link>a {
-  display: block;
-}
-
 .link {
   text-decoration: none;
   color: var(--main-font-color);
   line-height: var(--line-height-for-font-14);
   font-size: 14px;
+  letter-spacing: 0.02em;
 
 }
 
@@ -83,6 +84,13 @@ body {
   color: inherit;
   text-decoration: none;
   display: block;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+
+.flex-phone-mail {
+  flex-basis: content;
+  margin-left: 50px;
 }
 
 .contrast {
@@ -254,8 +262,9 @@ body {
 /*here starts portfolio.html css*/
 .filter-buttons {
   list-style-type: none;
-
-  column-gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-button {
@@ -290,6 +299,10 @@ body {
 
 .project-gallery {
   list-style-type: none;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--element-gap);
 
 }
 
@@ -299,6 +312,11 @@ body {
   border: 1px;
   border-style: solid;
   border-color: var(--project-gallery-figure-border-color);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  flex-basis: calc(100%-60/3);
 }
 
 .project-title {
@@ -350,4 +368,6 @@ body {
 
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
