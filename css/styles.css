@@ -42,7 +42,16 @@ body {
   align-items: center;
 }
 
-.menu:nth-child(3) {
+.menu-flex-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 492px;
+}
+
+.flex-menu-right {
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
 }
 
@@ -85,7 +94,6 @@ body {
   text-decoration: none;
   display: block;
   letter-spacing: 0.03em;
-  margin-right: 93px;
 }
 
 .flex-phone-mail {
@@ -265,10 +273,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  row-gap: 8px;
+  margin-bottom: 50px;
 }
 
 .filter-button {
   background-color: var(--team-and-button-color);
+  padding: 6px 22px;
+  margin: 0 4px;
   border: 4px;
   border-radius: 4px;
   font-family: "Roboto";
@@ -308,7 +320,7 @@ body {
 
 .project {
   height: 404px;
-  width: 380px;
+  width: 370px;
   border: 1px;
   border-style: solid;
   border-color: var(--project-gallery-figure-border-color);
@@ -316,7 +328,11 @@ body {
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  flex-basis: calc(100%-60/3);
+  flex-basis: calc((100%-60px)/3);
+}
+
+.project>figcaption {
+  padding: 20px 24px;
 }
 
 .project-title {
@@ -343,11 +359,9 @@ body {
   color: var(--ordinary-font-color);
 }
 
-.hidden {
-  display: none;
-}
 
-/*CSS positions*/
+
+/*CSS positions universal (across many html)*/
 .section {
   padding: 94px 0;
 }
@@ -364,10 +378,4 @@ body {
 
 .block-display {
   display: block;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
