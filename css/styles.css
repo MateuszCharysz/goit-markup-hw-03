@@ -139,6 +139,10 @@ body {
 
 }
 
+.call-to-action-button:hover {
+  cursor: pointer;
+}
+
 .features {
   list-style-type: none;
   /*position of next element and positioning*/
