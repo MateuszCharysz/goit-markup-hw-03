@@ -6,7 +6,7 @@
   --line-height-for-font-14: 1.14;
   --element-gap: 30px;
   --team-and-button-color: #f5f4fa;
-  --project-gallery-figure-border-color: #eeeeee;
+  --project-gallery-border-color: #eeeeee;
 }
 
 /*Here is normalization - chrome*/
@@ -299,11 +299,7 @@ body {
   color: inherit;
 }
 
-.filter-button:hover {
-  cursor: pointer;
-}
-
-.filter-button:active {
+.filter-button:active, .filter-button:hover {
   background-color: var(--highlight-color);
   color: #fff;
   /* shadow-middle */
@@ -323,11 +319,12 @@ body {
 }
 
 .project {
+  display: block;
   height: 404px;
-  width: 370px;
+  max-width: 370px;
   border: 1px;
   border-style: solid;
-  border-color: var(--project-gallery-figure-border-color);
+  border-color: var(--project-gallery-border-color);
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -335,9 +332,10 @@ body {
   flex-basis: calc((100%-60px)/3);
 }
 
-.project>figcaption {
-  padding: 20px 24px;
+.project > p {
+  padding: 0 0 20px 24px;
 }
+ .project > img { display: block;}
 
 .project-title {
   font-family: "Roboto";
@@ -348,22 +346,19 @@ body {
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
+  padding: 20px 0 0 24px;
 }
 
 .project-type {
   font-family: "Roboto";
   font-style: normal;
-
   font-size: 16px;
   line-height: 1.88;
   /* identical to box height, or 188% */
-
   letter-spacing: 0.03em;
-
   color: var(--ordinary-font-color);
+    padding: 0 0 20px 24px;
 }
-
-
 
 /*CSS positions universal (across many html)*/
 .section {
